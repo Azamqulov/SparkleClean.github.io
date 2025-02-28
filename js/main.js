@@ -2,13 +2,13 @@
 document.addEventListener("DOMContentLoaded", function () {
   if (!localStorage.getItem("cookiesAccepted")) {
     setTimeout(function () {
-      document.getElementById("cookiePopup").classList.add("show");
+      document.getElementById("cookiePopupp").classList.add("show");
     }, 1000);
   }
 });
 function acceptCookies() {
   localStorage.setItem("cookiesAccepted", "true");
-  document.getElementById("cookiePopup").classList.remove("show");
+  document.getElementById("cookiePopupp").classList.remove("show");
 }
 
 
