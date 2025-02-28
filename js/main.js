@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (!localStorage.getItem("cookiesAccepted")) {
     setTimeout(function () {
       document.getElementById("cookiePopup").classList.add("show");
-    }, 5000);
+    }, 1000);
   }
 });
 function acceptCookies() {
@@ -11,6 +11,8 @@ function acceptCookies() {
   document.getElementById("cookiePopup").classList.remove("show");
 }
 
+
+// 
 document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.querySelector('.menu-toggle');
     const navLinks = document.querySelector('.nav-links');
