@@ -1,4 +1,16 @@
 // Mobile Menu Toggle
+document.addEventListener("DOMContentLoaded", function () {
+  if (!localStorage.getItem("cookiesAccepted")) {
+    setTimeout(function () {
+      document.getElementById("cookiePopup").classList.add("show");
+    }, 5000);
+  }
+});
+function acceptCookies() {
+  localStorage.setItem("cookiesAccepted", "true");
+  document.getElementById("cookiePopup").classList.remove("show");
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.querySelector('.menu-toggle');
     const navLinks = document.querySelector('.nav-links');
@@ -69,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Service buttons
-    const bookButtons = document.querySelectorAll('.primary-button, .cta-primary');
+    const bookButtons = document.querySelectorAll('.primary-button, .cta-primary ,cta-button');
     bookButtons.forEach(button => {
       button.addEventListener('click', function() {
         const contactSection = document.querySelector('#contact');

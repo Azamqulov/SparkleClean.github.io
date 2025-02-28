@@ -514,6 +514,9 @@ button {
 }
 
 .contact-methods {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 2rem;
 }
 
@@ -856,4 +859,35 @@ button {
 
 .cookie-table tr:nth-child(even) {
   background-color: #f9f9f9;
+}
+
+
+
+
+.cookie-popup {
+  height: 150px;
+  position: fixed;
+  width:100% ;  
+  bottom: -100px;
+  background: gray;
+  padding: 1rem;
+  box-shadow: var(--shadow);
+  margin: 0 auto  ;
+  text-align: center;
+  opacity: 0;
+  transition: bottom 0.1s ease, opacity 0.1s ease;
+  z-index: 999;
+}
+.cookie-popup.show {
+  bottom: 1px;
+  opacity: 1;
+}
+.cookie-popup button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: var(--primary-color);
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
 }

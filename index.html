@@ -25,6 +25,14 @@
 <meta name="google-site-verification" content="8MfylAdX9ijTNxdOVPsEnBiwGOsOT2HIpVikBUFu6fQ">
 </head>
 <body>
+<!-- Cookie Popup -->
+<div class="cookie-popup" id="cookiePopup">
+    <p>Web sitemiz, size en iyi deneyimi sunmak için çerezleri kullanır. Devam ederek çerez kullanımını kabul etmiş olursunuz.</p>
+    <a href="page/cookie-policy.html">cookie</a> 
+    <button onclick="acceptCookies()">Kabul Et</button>
+  </div>
+
+
 <!-- Navigasyon -->
 <nav class="navbar">
     <div class="container">
@@ -36,10 +44,12 @@
             <li><a href="#testimonials">Referanslar</a></li>
             <li><a href="#contact">İletişim</a></li>
         </ul>
-        <button class="cta-button">Temizlik Rezervasyonu</button>
-        <div class="menu-toggle">
-            <i class="fas fa-bars"></i>
-        </div>
+        
+        <button class="cta-button">
+            Temizlik Rezervasyonu</button>
+            <div class="menu-toggle">   
+                <i class="fas fa-bars"></i>
+            </div>
     </div>
 </nav>
 
@@ -51,7 +61,6 @@
             <p>Profesyonel ev ve apartman temizliği hizmetlerimizle mükemmel temiz bir alana gelmenin keyfini yaşayın.</p>
             <div class="hero-buttons">
                 <button class="primary-button">Şimdi Rezervasyon Yap <i class="fas fa-arrow-right"></i></button>
-                <button class="secondary-button">Hizmetleri Görüntüle</button>
             </div>
         </div>
         <!-- https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80 -->
@@ -237,7 +246,6 @@
         <p>Bugün temizlik hizmetinizi rezerve edin ve profesyonelce temizlenmiş bir evin farkını yaşayın.</p>
         <div class="cta-buttons">
             <button class="cta-primary"><i class="fas fa-calendar"></i>  Temizlik Planla</button>
-            <button class="cta-secondary"><i class="fas fa-comment"></i> Teklif Al</button>
         </div>
     </div>
 </section>
@@ -283,12 +291,12 @@
             </div>
         </div>
         
-            
+
     </div>
 </section>
 
 <!-- Altbilgi -->
-<footer class="footer">
+<footer class="footer" id="footert">
     <div class="container">
         <div class="footer-content">
             <div class="footer-logo">
@@ -338,7 +346,7 @@
       </div>
 
     </div>
-  </footer>
+  </footer> 
 <!-- script -->
   <script src="js/main.js"></script>
   <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-R6CYHGW97P"></script>
