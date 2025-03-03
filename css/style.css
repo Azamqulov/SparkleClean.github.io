@@ -518,8 +518,10 @@ button {
 
 .contact-methods {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  margin:  0 auto;
   margin-bottom: 2rem;
 }
 
@@ -881,8 +883,24 @@ button {
   z-index: 999;   
   text-align: start;
 }
+@media (max-width: 768px) {
+  .cookie-popup {
+    height: 220px;
+    margin:  0 auto;
+  }
+  .cookie-popup .btn{
+    display:flex;
+    flex-direction: row !important;
+    gap: 20px;
+    align-items: center;
+  }
+  .cookie-popup p{
+    width: 100% !important;
+  }
+}
 .cookie-popup .container{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
