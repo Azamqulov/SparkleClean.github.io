@@ -147,7 +147,14 @@ button {
   align-items: center;
   padding: 1rem 2rem;
 }
-
+@media (max-width:  400px) {
+  .cookie-popup {
+    width: 320px;
+    }
+  .navbar .container {
+    width: 320px;
+  }
+}
 .logo {
   font-size: 1.5rem;
   font-weight: 700;
@@ -727,6 +734,9 @@ button {
 }
 
 @media (max-width: 768px) {
+  .container{
+    width: 100%;
+  }
   .nav-links,
   .cta-button {
     display: none;
@@ -885,7 +895,7 @@ button {
 }
 @media (max-width: 768px) {
   .cookie-popup {
-    height: 220px;
+    height: 400px;
     margin:  0 auto;
   }
   .cookie-popup .btn{
